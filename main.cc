@@ -13,7 +13,7 @@
 #include "SDL_Utility/include.h"
 
 #define ERROR_LOG_FILE "error_log.txt"
-#define VERSION "0.00"
+#define VERSION "0.000001"
 
 bool Init();
 void Quit();
