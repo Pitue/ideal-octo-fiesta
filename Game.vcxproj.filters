@@ -1,22 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{63256c1e-2e70-4f80-81e2-889bfebb6fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{e6bb3038-60e6-431a-a05d-5dad1df9cec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\SDL_Utility">
+      <UniqueIdentifier>{fa3fe405-d0e2-4fc2-8b22-c4bce98c9aba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Program.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="main.cc">
+      <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="SDL_Utility\Sprite.cc">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Utility\Time.cc">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDL_Utility\General.h">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Utility\include.h">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Utility\Sprite.h">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Utility\Time.h">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Utility\Vector.h">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
