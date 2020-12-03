@@ -9,11 +9,10 @@
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
 
-
 #include "SDL_Utility/include.h"
 
 #define ERROR_LOG_FILE "error_log.txt"
-#define VERSION "0.00"
+#define VERSION "GEIL"
 
 bool Init();
 void Quit();
