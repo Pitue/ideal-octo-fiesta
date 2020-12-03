@@ -32,6 +32,8 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 
+	std::string temp = "Änderung";
+
 	SDL_Event e;
 	bool running = true;
 	while (running) {
