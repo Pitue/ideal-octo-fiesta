@@ -20,7 +20,7 @@ void ErrorHandle(std::string message);
 std::string GetTimeString();
 
 int main(int argc, char** argv) {
-	
+	//Hallo
 	
 	mh::SDL_Container container(VERSION, mh::Rect(SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1600, 900),
 															SDL_WINDOW_SHOWN, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
