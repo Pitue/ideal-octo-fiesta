@@ -35,8 +35,11 @@ int main(int argc, char** argv) {
 			if (e.type == SDL_EventType::SDL_QUIT) {
 				running = false;
 			}
+
+
 		}
-		
+		SDL_RenderClear(container.renderer);
+		SDL_RenderPresent(container.renderer);
 	}
 
 	Quit();
