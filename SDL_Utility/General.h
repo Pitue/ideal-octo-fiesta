@@ -17,7 +17,10 @@ namespace mh {
 																window_dimension.w, window_dimension.h, window_flags);
 			if (window != NULL) {
 				renderer = SDL_CreateRenderer(window, -1, renderer_flags);
-				if (renderer != NULL) err = 0;
+				if (renderer != NULL) {
+					SDL_SetRenderDrawColor(renderer, 124, 252, 0, 255);
+					err = 0;
+				}
 			}
 		}
 		~SDL_Container() {
