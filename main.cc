@@ -12,7 +12,7 @@
 #include "SDL_Utility/include.h"
 
 #define ERROR_LOG_FILE "error_log.txt"
-#define VERSION "GEILLL"
+#define VERSION "0.000"
 
 bool Init();
 void Quit();
@@ -20,7 +20,10 @@ void ErrorHandle(std::string message);
 std::string GetTimeString();
 
 int main(int argc, char** argv) {
-	//Hallo
+	if (!Init()) {
+		ErrorHandle(SDL_GetError());
+		return 1;
+	}
 	
 	mh::SDL_Container container(VERSION, mh::Rect(SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1600, 900),
 															SDL_WINDOW_SHOWN, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
@@ -29,10 +32,6 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 
-	std::string temp = "�nderung";
-	//ICH LIEBE SCHOKOLADEN PUDDING
-
-	//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 	SDL_Event e;
 	bool running = true;
 	while (running) {
