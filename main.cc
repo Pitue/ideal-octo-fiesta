@@ -28,6 +28,17 @@ int main(int argc, char** argv) {
 	mh::SDL_Container container("test", mh::Rect(SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1600, 900),
 															SDL_INIT_VIDEO, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
+	SDL_Event e;
+	bool running = true;
+	while (running) {
+		while (SDL_PollEvent(&e)) {
+			if (e.type == SDL_EventType::SDL_QUIT) {
+				running = false;
+			}
+		}
+		
+	}
+
 	Quit();
 	return 0;
 }
