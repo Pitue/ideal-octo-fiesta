@@ -20,10 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cc" />
+    <ClCompile Include="SDL_Utility\AnimatedSprite.cc" />
     <ClCompile Include="SDL_Utility\Sprite.cc" />
     <ClCompile Include="SDL_Utility\Time.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Projekte\Schach\SDL_Utility\AnimatedSprite.h" />
+    <ClInclude Include="SDL_Utility\Button.h" />
     <ClInclude Include="SDL_Utility\General.h" />
     <ClInclude Include="SDL_Utility\include.h" />
     <ClInclude Include="SDL_Utility\Sprite.h" />

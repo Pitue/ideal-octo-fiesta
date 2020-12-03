@@ -13,6 +13,7 @@
 #include "SDL_Utility/include.h"
 
 #define ERROR_LOG_FILE "error_log.txt"
+#define VERSION "0.00"
 
 bool Init();
 void Quit();
@@ -25,8 +26,15 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 	
-	mh::SDL_Container container("test", mh::Rect(SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1600, 900),
-															SDL_INIT_VIDEO, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+	mh::SDL_Container container(VERSION, mh::Rect(SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1600, 900),
+															SDL_WINDOW_SHOWN, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+	if (!container) {
+		ErrorHandle(SDL_GetError());
+		return 1;
+	}
+
+	mh::Button btn;
+	btn.set_texture(IMG_LoadTexture(container.renderer, "test.png"), true);
 
 	SDL_Event e;
 	bool running = true;
@@ -36,12 +44,19 @@ int main(int argc, char** argv) {
 				running = false;
 			}
 
+			else if (e.type == SDL_EventType::SDL_MOUSEBUTTONDOWN) {
+				if (btn.HasFocus(mh::Point(e.button.x, e.button.y))) {
+					running = false;
+				}
+			}
 
 		}
 		SDL_RenderClear(container.renderer);
+		btn.Draw(container.renderer);
 		SDL_RenderPresent(container.renderer);
 	}
 
+	SDL_DestroyTexture(btn.get_texture());
 	Quit();
 	return 0;
 }

@@ -25,6 +25,9 @@
     <ClCompile Include="SDL_Utility\Time.cc">
       <Filter>Header\SDL_Utility</Filter>
     </ClCompile>
+    <ClCompile Include="SDL_Utility\AnimatedSprite.cc">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SDL_Utility\General.h">
@@ -40,6 +43,12 @@
       <Filter>Header\SDL_Utility</Filter>
     </ClInclude>
     <ClInclude Include="SDL_Utility\Vector.h">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Projekte\Schach\SDL_Utility\AnimatedSprite.h">
+      <Filter>Header\SDL_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Utility\Button.h">
       <Filter>Header\SDL_Utility</Filter>
     </ClInclude>
   </ItemGroup>
