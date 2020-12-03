@@ -33,9 +33,6 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 
-	mh::Button btn;
-	btn.set_texture(IMG_LoadTexture(container.renderer, "test.png"), true);
-
 	SDL_Event e;
 	bool running = true;
 	while (running) {
@@ -43,20 +40,13 @@ int main(int argc, char** argv) {
 			if (e.type == SDL_EventType::SDL_QUIT) {
 				running = false;
 			}
-
 			else if (e.type == SDL_EventType::SDL_MOUSEBUTTONDOWN) {
-				if (btn.HasFocus(mh::Point(e.button.x, e.button.y))) {
-					running = false;
-				}
-			}
 
+			}
 		}
 		SDL_RenderClear(container.renderer);
-		btn.Draw(container.renderer);
 		SDL_RenderPresent(container.renderer);
 	}
-
-	SDL_DestroyTexture(btn.get_texture());
 	Quit();
 	return 0;
 }
