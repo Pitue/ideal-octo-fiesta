@@ -19,7 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cc" />
+    <ClCompile Include="main.cc" />
+    <ClCompile Include="SDL_Utility\Sprite.cc" />
+    <ClCompile Include="SDL_Utility\Time.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDL_Utility\General.h" />
+    <ClInclude Include="SDL_Utility\include.h" />
+    <ClInclude Include="SDL_Utility\Sprite.h" />
+    <ClInclude Include="SDL_Utility\Time.h" />
+    <ClInclude Include="SDL_Utility\Vector.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
