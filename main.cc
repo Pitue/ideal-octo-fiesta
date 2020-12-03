@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <fstream>
 
@@ -29,7 +29,8 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 
-	std::string temp = "Änderung";
+	std::string temp = "ï¿½nderung";
+	//ICH LIEBE SCHOKOLADEN PUDDING
 
 	SDL_Event e;
 	bool running = true;
