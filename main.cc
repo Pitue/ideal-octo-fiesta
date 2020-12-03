@@ -33,6 +33,7 @@ int main(int argc, char** argv) {
 	}
 
 	std::string temp = "Änderung";
+	//ICH LIEBE SCHOKOLADEN PUDDING
 
 	SDL_Event e;
 	bool running = true;
