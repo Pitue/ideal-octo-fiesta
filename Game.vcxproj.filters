@@ -14,6 +14,15 @@
     <Filter Include="Header\SDL_Utility">
       <UniqueIdentifier>{fa3fe405-d0e2-4fc2-8b22-c4bce98c9aba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header\Game Classes">
+      <UniqueIdentifier>{9e680512-cd32-4634-91b8-85b020e40c5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\General">
+      <UniqueIdentifier>{e7fd9f1b-18d1-4be8-a2f2-a6c3aad20aa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game Class">
+      <UniqueIdentifier>{48d3dfcb-bd86-4c54-bc23-49356499f04c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cc">
@@ -27,6 +36,9 @@
     </ClCompile>
     <ClCompile Include="SDL_Utility\AnimatedSprite.cc">
       <Filter>Header\SDL_Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD.cc">
+      <Filter>Source\Game Class</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +62,18 @@
     </ClInclude>
     <ClInclude Include="SDL_Utility\Button.h">
       <Filter>Header\SDL_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Section.h">
+      <Filter>Header\Game Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Header\General</Filter>
+    </ClInclude>
+    <ClInclude Include="main_include.h">
+      <Filter>Header\General</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD.h">
+      <Filter>Header\Game Classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

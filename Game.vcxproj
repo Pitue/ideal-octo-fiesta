@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="HUD.cc" />
     <ClCompile Include="main.cc" />
     <ClCompile Include="SDL_Utility\AnimatedSprite.cc" />
     <ClCompile Include="SDL_Utility\Sprite.cc" />
@@ -26,12 +27,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Projekte\Schach\SDL_Utility\AnimatedSprite.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="HUD.h" />
+    <ClInclude Include="main_include.h" />
     <ClInclude Include="SDL_Utility\Button.h" />
     <ClInclude Include="SDL_Utility\General.h" />
     <ClInclude Include="SDL_Utility\include.h" />
     <ClInclude Include="SDL_Utility\Sprite.h" />
     <ClInclude Include="SDL_Utility\Time.h" />
     <ClInclude Include="SDL_Utility\Vector.h" />
+    <ClInclude Include="Section.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
